@@ -1,4 +1,4 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+
 
 #include "Phantom.h"
 #include "PacmanActor.h"
@@ -8,7 +8,7 @@
 #include "Sound/SoundWave.h"
 #include "DrawDebugHelpers.h"
 
-// Sets default values
+
 APhantom::APhantom()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
@@ -18,14 +18,14 @@ APhantom::APhantom()
 	// Set as root component
 	RootComponent = PhantomMesh;
 
-	//// Use a sphere as a simple collision representation
+	//// Sfera per collission
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
 	CollisionComp->InitSphereRadius(1.5f);
 	CollisionComp->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
 	CollisionComp->SetupAttachment(RootComponent);
 }
 
-// Called when the game starts or when spawned
+// Chiamata quando parte il gioco o quando viene spawnato
 void APhantom::BeginPlay()
 {
 	Super::BeginPlay();
@@ -43,17 +43,16 @@ void APhantom::Tick(float DeltaTime)
 
 	if (Grid)
 	{
-		//If we arrive close enough to the destination, move to position and swap directions (if needed)
 		
 		int XTileActor, YTileActor = 0;
 		Grid->GetTileFromWorld(GetActorLocation(), XTileActor, YTileActor);
 		
 		if (XTileActor == XTileDestination && YTileActor == YTileDestination)
 		{
-			//Move actor to destination
+			//MActor a destinazione
 			SetActorLocation(Destination);
 
-			//Teleport managing
+			//Teleport 
 			if (Grid->GetTileValue(XTileActor, YTileActor) == 'T')
 			{
 				if (YTileActor == 0)
@@ -62,17 +61,17 @@ void APhantom::Tick(float DeltaTime)
 					SetActorLocation(Grid->GetGridSpecialPosition(LeftTeleport));
 			}
 
-			//Get next destination and movement
+			//Prendo la nuova destinazione
 			Destination = Grid->GetNextDestination( GetTargetPosition(), GetActorLocation(), MovementDir, NextMovementDir);
 			Grid->GetTileFromWorld(Destination, XTileDestination, YTileDestination);
 
-			//Swap Directions
+			// inverto la direzione
 			MovementDir = NextMovementDir;
 		}
 
-		//Move
+		//Mi muovo
 		FVector NextPosition = GetActorLocation() + (MovementDir * (Speed * SpeedMultiplier * DeltaTime));
-		//never moving in the z axis
+		//senza spostare mai asse z
 		NextPosition.Z = 0;
 		SetActorLocation(NextPosition, true);
 	}
@@ -103,9 +102,6 @@ void APhantom::ChangeState(EState NewState)
 {
 	if (NewState != CurrentState)
 	{
-		//Edit: for unknown reasons the "MovementDir *= -1.0f" causes the Frightened state to work unpropriately when called
-		//Change Direction
-		//MovementDir *= -1.0f;
 		CurrentState = NewState;
 	}
 }
@@ -133,7 +129,7 @@ void APhantom::OnOverlap(UPrimitiveComponent * OverlappedComponent, AActor * Oth
 	}
 }
 
-//does not work as expected, one or more ghosts start "floating" around the map instead of changing their direction
+//mi sa che non sta funzionando proprio bene (a volte i fantasmi volano)
 void APhantom::ChangeDirection()
 {
 	if (Grid)
@@ -144,14 +140,14 @@ void APhantom::ChangeDirection()
 	}
 }
 
-//Scatter and Chase alternation
+//Cambio tra scatter e chase
 void APhantom::OnScatterTimerExpired()
 {
 	ChangeState(EState::Chase);
 }
 
 
-//different target for different states (Pacman for Scatter state, ghosts house for Frightened state)
+// cambio target un base allo state 
 FVector APhantom::GetTargetPosition()
 {
 	switch (CurrentState)
@@ -164,7 +160,6 @@ FVector APhantom::GetTargetPosition()
 	}
 	case EState::Scatter:
 	{
-		//DrawDebugSphere(GetWorld(), Grid->GetGridSpecialPosition(ScatterPosition), 20.0f, 32, FColor::Green, false, 1.0f);
 		SetSpeedMultiplier(1.0f);
 		return Grid->GetGridSpecialPosition(ScatterPosition);
 		break;

@@ -88,6 +88,7 @@ void APacmanActor::SetMovement(EDirection NewDirection)
 	}
 }
 
+// TODO: Pacman non può essere mangiato
 bool APacmanActor::IsPacmanInvincible()
 {
 	return PacmanIsInvincible;
@@ -111,6 +112,7 @@ void APacmanActor::OnSpeedBoostTimerExpired()
 	}
 }
 
+
 void APacmanActor::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult)
 {
 	if (OtherActor->IsA(APoint::StaticClass()))
@@ -118,6 +120,7 @@ void APacmanActor::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* O
 		APoint* Point = Cast<APoint>(OtherActor);
 		Point->Eat();
 		if (Point->GetSpecial()) {
+			// aumento velocità e non può essere mangiato
 			SpeedMultiplier = 2.0f;
 			PacmanIsInvincible = true;
 
@@ -128,15 +131,19 @@ void APacmanActor::OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* O
 				APhantom* Phantom = Cast<APhantom>(Actor);
 				if (Phantom)
 				{
+					// se i fantasmi sono nello stato frightened
 					PhantomStateBeforeFrightened = Phantom->GetState();
 					Phantom->ChangeState(EState::Frightened);
 				}
 			}
 
+			// imposto anche il timer
 			GetWorld()->GetTimerManager().SetTimer(SpeedBoostTimerHandle, this, &APacmanActor::OnSpeedBoostTimerExpired, SpeedBoostDuration, false);
 			
 		}
 	}
+	// perché non funzionaaaa
+	// ora dovrebbe andare
 	else if (OtherActor->IsA(APhantom::StaticClass()))
 	{
 		APhantom* Phantom = Cast<APhantom>(OtherActor);
