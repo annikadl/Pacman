@@ -11,7 +11,7 @@ class APoint;
 class APacmanActor;
 class APhantom;
 
-//Direction 
+//Direzione 
 enum class EDirection : uint8
 {
 	Up,
@@ -20,7 +20,7 @@ enum class EDirection : uint8
 	Right,
 };
 
-// Special Grid Positions
+// Posizioni speciali
 UENUM(BlueprintType)
 enum class EGridPositions : uint8
 {
@@ -34,7 +34,7 @@ enum class EGridPositions : uint8
 	RightTeleport
 };
 
-//SearchOrder 
+ 
 enum class ESearchOrder : uint8
 {
 	MinDistance,
@@ -75,10 +75,10 @@ class PACMAN_API AGrid : public AActor
 	GENERATED_BODY()
 
 public:	
-	// Sets default values for this component's properties
+	// valori di default
 	AGrid();
 
-	/** Assets to spawn */
+	// cose da spawnare
 	UPROPERTY(EditDefaultsOnly, Category = "Pacman")
 	TSubclassOf<AStaticMeshActor> WallClass;
 
@@ -97,53 +97,49 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Pacman")
 	APacmanActor* GetPacman() { return PacmanActor; }
 
-	//Return true/false if the movement can be done
+	// il movimento che voglio fare è lecito?
 	bool CanPlayerMoveInDir(EDirection NewDirection);
 
 	bool CanMoveToTile(const int& XTile, const int& YTile);
 
-	//Function to check if a player can move following the NewDirection
-	// the new position that we want to achieve is NewDestination (Normalyy, a center point in the Tile) always
+	// verifica se ci possiamo muovere verso la prossima direzione
 	bool CalculateNewDestination(EDirection NewDirection, FVector& Destination);
 
-	//Return a world position for special cases
+	// posizione in casi speciali
 	FVector GetGridSpecialPosition(EGridPositions GridChoice);
 
-	// Function that return the next destination 
-	// PositionToGo - Position where we want to go in world space
-	// CurrentPosition - Current World Positions
-	// CurrentDirection - Current Direction of moving
-	// NextDirection - Next direction after reaching the destination, the function will change it
+	// ritorno prossimaa destinazione
+	// PositionToGo - dove voglio andare
+	// CurrentPosition - posizionei corrente
+	// CurrentDirection - Cdirezione del moviemto corrente
+	// NextDirection - nuova dir dopo aver raggiunto la nuova dire
 	FVector GetNextDestination(const FVector& PositionToGo, const FVector& CurrentPosition, const FVector& CurrentDirection, FVector& NextDirection, ESearchOrder SearchOrder = ESearchOrder::MinDistance);
 
-	// Get Vector direction from EDirection
 	FVector GetVectorDirection(const EDirection& NewDirection);
 
 protected:
-	// Called when the game starts
+	// chiamata quando paret il gioco
 	virtual void BeginPlay() override;
 
 public:	
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	//Main Pacman Actor
 	APacmanActor* PacmanActor = nullptr;
 
-	//Multiplier to convert from World location to GridLocation
+	// posizione sulla griglia da pos assoluta
 	float Converser = 1.0f;
 
-	//Return the Tile X,Y from a WorldPosition.
+	// tile x,y da abs
 	void GetTileFromWorld(const FVector& WorldPosition, int& XTile, int& YTile);
 
-	//Return the Tile char value from XTile and YTile
+	// tile char da xtile e ytile
 	char GetTileValue(int& XTile, int& YTile);
 
 private:
-	//Return World Tile center position
+	// pos abs
 	FVector GetWorldFromTile(const int& XTile, const int& YTile);
 
-	//Update the Tile positions on the next direction
+	// agg con nuova direzione
 	void GetTileInDir(EDirection NextDirection, int& XTile, int& YTile);
 
 	TArray<FTileSelection>GetPossibleTiles(int XTile, int YTile, EDirection CurrentDir);

@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -18,11 +16,11 @@ class PACMAN_API APacmanActor : public AActor
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
+	// Setto valori default
 	APacmanActor();
 
 protected:
-	// Called when the game starts or when spawned
+	// Chiamato quando parte il gioco o quando spawnato
 	virtual void BeginPlay() override;
 
 	UPROPERTY(VisibleAnywhere, Category = "Components")
@@ -31,16 +29,15 @@ protected:
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 	USphereComponent* CollisionComp = nullptr;
 
-	// Base Speed of the player
+	// Velocità
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pacman")
 	float Speed = 500.0f;
 
-	//Multiplier over the speed from 0-1 (0% - 100%)
+	// Moltiplicatore velocità
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pacman")
 	float SpeedMultiplier = 1.0f;
 
-	//Threshold to know when we are close enough of the destination
-	//Normally is related to the Speed, ifwe have a bigger speed the threshold need to be bigger
+	// Vicini o no destinazione
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pacman")
 	float ThresholdRadius = 40.0f;
 
@@ -51,18 +48,17 @@ protected:
 	EGridPositions RightTeleport = EGridPositions::RightTeleport;
 
 public:	
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	void SetMovement(EDirection NewDirection);
 	
-	//Called when a actor overlaps something
+	// quando un actor overlappa
 	UFUNCTION()
 	void OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
 
 	void SetGrid(AGrid* NewGrid) { Grid = NewGrid; }
 
-	//function and variables for the speed boost when Pacman eats a special food
+	// Pacman mangia cibo speciale
 	UFUNCTION()
 	void OnSpeedBoostTimerExpired();
 
@@ -71,7 +67,7 @@ public:
 
 	FTimerHandle SpeedBoostTimerHandle;
 
-	//functions and variables for when Pacman eats a ghost
+	// Pacman mangia fantasma
 	void OnDeadTimerExpired();
 
 	UPROPERTY(EditAnywhere)
@@ -79,7 +75,7 @@ public:
 
 	FTimerHandle DeadTimerHandle;
 
-	//Pacman invincibility proprerties
+	//Pacman invincibile
 	bool PacmanIsInvincible = false;
 	bool IsPacmanInvincible();
 
@@ -90,20 +86,20 @@ public:
 	EState PhantomStateBeforeDead;
 
 private:
-	//Define the direction of movement of the player in X,Y. 
+	// Direzione movimento X,Y. 
 	// X => 1 : Right| -1 : Left
 	// Y => 1 : Up | -1 : Down
-	//Start Right
+	// Inizo a dx
 	FVector MovementDirection = FVector(1.0f, 0.0f, 0.0f);
 
-	//Set to tru when we can't move
+	// Posso muovermi
 	bool bStopMovement = false;
 
 	EDirection CurrentDirection = EDirection::Right;
 
 	AGrid* Grid = nullptr;
 
-	//Player Destination, normally a center of a Tile
+	// Destinazione
 	FVector Destination = FVector::ZeroVector;
 
 	UPROPERTY(EditAnywhere)
