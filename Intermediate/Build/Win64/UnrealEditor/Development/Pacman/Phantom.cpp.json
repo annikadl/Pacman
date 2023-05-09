@@ -1,0 +1,38 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\source\\pacman\\private\\phantom.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\pacmaneditor\\development\\engine\\sharedpch.engine.h.pch",
+        "Includes": [
+            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\development\\pacman\\definitions.pacman.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\source\\pacman\\public\\phantom.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\kismetsystemlibrary.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\sound\\dialoguetypes.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\dialoguetypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystaticstypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystatics.generated.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\source\\pacman\\public\\pacmangrid.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\pacmangrid.generated.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\phantom.generated.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\source\\pacman\\public\\pacmanactor.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\pacmanactor.generated.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\source\\pacman\\pacmangamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gamemodebase.generated.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\pacmangamemodebase.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\components\\spherecomponent.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\spherecomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

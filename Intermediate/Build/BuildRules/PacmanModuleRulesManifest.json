@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\PAA_user\\Documents\\Unreal Projects\\Pacman-Delucchi\\PacmanUE5-main\\Source\\Pacman\\Pacman.Build.cs",
+		"C:\\Users\\PAA_user\\Documents\\Unreal Projects\\Pacman-Delucchi\\PacmanUE5-main\\Source\\Pacman.Target.cs",
+		"C:\\Users\\PAA_user\\Documents\\Unreal Projects\\Pacman-Delucchi\\PacmanUE5-main\\Source\\PacmanEditor.Target.cs"
+	],
+	"EngineVersion": "5.0.3"
+}

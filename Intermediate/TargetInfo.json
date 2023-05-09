@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Pacman",
+			"Path": "C:\\Users\\PAA_user\\Documents\\Unreal Projects\\Pacman-Delucchi\\PacmanUE5-main\\Source\\Pacman.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "PacmanEditor",
+			"Path": "C:\\Users\\PAA_user\\Documents\\Unreal Projects\\Pacman-Delucchi\\PacmanUE5-main\\Source\\PacmanEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
