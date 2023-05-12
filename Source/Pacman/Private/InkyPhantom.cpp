@@ -2,6 +2,11 @@
 
 #include "InkyPhantom.h"
 
+void ABlinkyPhantom::BeginPlay()
+{
+	Super::BeginPlay();
 
+
+}
 
 

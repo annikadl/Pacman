@@ -13,7 +13,7 @@ UCLASS()
 class PACMAN_API APinkyPhantom : public APhantom
 {
 	GENERATED_BODY()
-	
+
 	
 	
 	

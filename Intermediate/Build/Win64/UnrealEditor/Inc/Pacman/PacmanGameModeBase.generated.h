@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PACMAN_PacmanGameModeBase_generated_h
 
-#define FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_SPARSE_DATA
-#define FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_RPC_WRAPPERS
-#define FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_SPARSE_DATA
+#define FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_RPC_WRAPPERS
+#define FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPacmanGameModeBase(); \
 	friend struct Z_Construct_UClass_APacmanGameModeBase_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(APacmanGameModeBase)
 
 
-#define FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_INCLASS \
+#define FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesAPacmanGameModeBase(); \
 	friend struct Z_Construct_UClass_APacmanGameModeBase_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(APacmanGameModeBase)
 
 
-#define FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_STANDARD_CONSTRUCTORS \
+#define FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API APacmanGameModeBase(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(APacmanGameModeBase) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APacmanGameModeBase(APacmanGameModeBase&&); \
@@ -58,25 +58,25 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(APacmanGameModeBase)
 
 
-#define FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_12_PROLOG
-#define FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_GENERATED_BODY_LEGACY \
+#define FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_12_PROLOG
+#define FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_SPARSE_DATA \
-	FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_RPC_WRAPPERS \
-	FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_INCLASS \
-	FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_STANDARD_CONSTRUCTORS \
+	FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_SPARSE_DATA \
+	FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_RPC_WRAPPERS \
+	FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_INCLASS \
+	FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_GENERATED_BODY \
+#define FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_SPARSE_DATA \
-	FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
-	FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_SPARSE_DATA \
+	FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
+	FID_Pacman2_Source_Pacman_PacmanGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -84,7 +84,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> PACMAN_API UClass* StaticClass<class APacmanGameModeBase>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h
+#define CURRENT_FILE_ID FID_Pacman2_Source_Pacman_PacmanGameModeBase_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

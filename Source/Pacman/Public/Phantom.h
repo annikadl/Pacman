@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -27,7 +25,6 @@ class PACMAN_API APhantom : public AActor
 	GENERATED_BODY()
 	
 public:	
-	// Sets default values for this actor's properties
 	APhantom();
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Components")
@@ -37,18 +34,17 @@ public:
 	USphereComponent* CollisionComp = nullptr;
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-	// Base Speed of the player
+	// velocità normale
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pacman")
 	float Speed = 200.0f;
 
-	//Multiplier over the speed from 0-1 (0% - 100%)
+	// moltiplicatore velocità
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Pacman")
 	float SpeedMultiplier = 1.0f;
 
-	//functions and variables of Scatter-Chase alternation
+	// alternanza stato fantasmi
 	UFUNCTION()
 	void OnScatterTimerExpired();
 
@@ -64,15 +60,15 @@ protected:
 	FTimerHandle ScatterTimerHandle;
 	//FTimerHandle ChaseTimerHandle;
 
-	//Position to go when Scatter State
+	// posizione per scatter
 	UPROPERTY(EditDefaultsOnly, Category = "Pacman")
 	EGridPositions ScatterPosition = EGridPositions::TopLeft;
 
-	//Position to go when Frightened State (ghosts house) and when dead
+	// posizione per frigthned e dead (casa fantasmi)
 	UPROPERTY(EditDefaultsOnly, Category = "Pacman")
 	EGridPositions GhostsHouse = EGridPositions::Middle;
 
-	//Teleport positions
+	// posizione Teleport
 	UPROPERTY(EditDefaultsOnly, Category = "Pacman")
 	EGridPositions LeftTeleport = EGridPositions::LeftTeleport;
 
@@ -81,26 +77,25 @@ protected:
 
 
 public:	
-	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	void SetGrid(AGrid* NewGrid);
 
 	void SetStartDirection(FVector StartDirection) { MovementDir = StartDirection; }
 
-	//Change Phantom state
+	// cambio stato
 	void ChangeState(EState NewState);
 
-	//Change Phantom speed by scaling the speed multiplier
+	// cambio vel
 	void SetSpeedMultiplier(float Value);
 
-	//Get Phantom state
+	// get stato
 	EState GetState();
 
-	//Change ScatterPosition for each phantom
+	// cambio scatter position per ogni fantasma
 	void ChangeScatterPosition(EGridPositions NewPosition);
 
-	//Called when a actor overlaps something
+	// chiamata quando un attore overlappa qualcosa
 	UFUNCTION()
 	void OnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & SweepResult);
 
@@ -108,20 +103,20 @@ public:
 
 protected:
 
-	//Current Phantom State
+	// stato corrente
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	EState CurrentState = EState::Scatter;
 
-	//Return a world position (normally a center Tile point) where to go
+	// pos abs a ci andare
 	virtual FVector GetTargetPosition();
 
-	//Current Moving Dir
+	// direzione corrente
 	FVector MovementDir = FVector(-1.0f, 0.0f, 0.0f);
 
-	//Next Movement Dir after reaching Destination
+	// prossima direzione dop oaver raggiunto destinazione
 	FVector NextMovementDir = FVector(-1.0f, 0.0f, 0.0f);
 
-	//World position to reach
+	// posizione assoltaa da raggiungere
 	FVector Destination = FVector::ZeroVector;
 
 	//Grid Object

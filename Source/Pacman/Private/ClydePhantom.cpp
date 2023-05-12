@@ -2,6 +2,11 @@
 
 #include "ClydePhantom.h"
 
+void ABlinkyPhantom::BeginPlay()
+{
+	Super::BeginPlay();
 
+
+}
 
 

@@ -119,9 +119,9 @@ void EmptyLinkFunctionForGeneratedCodePacmanActor() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APacmanActor_OnOverlap_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "//Called when a actor overlaps something\n" },
+		{ "Comment", "// quando un actor overlappa\n" },
 		{ "ModuleRelativePath", "Public/PacmanActor.h" },
-		{ "ToolTip", "Called when a actor overlaps something" },
+		{ "ToolTip", "quando un actor overlappa" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APacmanActor_OnOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APacmanActor, nullptr, "OnOverlap", nullptr, nullptr, sizeof(Z_Construct_UFunction_APacmanActor_OnOverlap_Statics::PacmanActor_eventOnOverlap_Parms), Z_Construct_UFunction_APacmanActor_OnOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APacmanActor_OnOverlap_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APacmanActor_OnOverlap_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APacmanActor_OnOverlap_Statics::Function_MetaDataParams)) };
@@ -143,9 +143,9 @@ void EmptyLinkFunctionForGeneratedCodePacmanActor() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APacmanActor_OnSpeedBoostTimerExpired_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "//function and variables for the speed boost when Pacman eats a special food\n" },
+		{ "Comment", "// Pacman mangia cibo speciale\n" },
 		{ "ModuleRelativePath", "Public/PacmanActor.h" },
-		{ "ToolTip", "function and variables for the speed boost when Pacman eats a special food" },
+		{ "ToolTip", "Pacman mangia cibo speciale" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APacmanActor_OnSpeedBoostTimerExpired_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APacmanActor, nullptr, "OnSpeedBoostTimerExpired", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APacmanActor_OnSpeedBoostTimerExpired_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APacmanActor_OnSpeedBoostTimerExpired_Statics::Function_MetaDataParams)) };
@@ -231,8 +231,8 @@ void EmptyLinkFunctionForGeneratedCodePacmanActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Pacman,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APacmanActor_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APacmanActor_OnOverlap, "OnOverlap" }, // 731745051
-		{ &Z_Construct_UFunction_APacmanActor_OnSpeedBoostTimerExpired, "OnSpeedBoostTimerExpired" }, // 140018102
+		{ &Z_Construct_UFunction_APacmanActor_OnOverlap, "OnOverlap" }, // 3859111192
+		{ &Z_Construct_UFunction_APacmanActor_OnSpeedBoostTimerExpired, "OnSpeedBoostTimerExpired" }, // 2411152257
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APacmanActor_Statics::Class_MetaDataParams[] = {
@@ -259,27 +259,27 @@ void EmptyLinkFunctionForGeneratedCodePacmanActor() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APacmanActor_Statics::NewProp_Speed_MetaData[] = {
 		{ "Category", "Pacman" },
-		{ "Comment", "// Base Speed of the player\n" },
+		{ "Comment", "// Velocit?\n" },
 		{ "ModuleRelativePath", "Public/PacmanActor.h" },
-		{ "ToolTip", "Base Speed of the player" },
+		{ "ToolTip", "Velocit?" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APacmanActor_Statics::NewProp_Speed = { "Speed", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APacmanActor, Speed), METADATA_PARAMS(Z_Construct_UClass_APacmanActor_Statics::NewProp_Speed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APacmanActor_Statics::NewProp_Speed_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APacmanActor_Statics::NewProp_SpeedMultiplier_MetaData[] = {
 		{ "Category", "Pacman" },
-		{ "Comment", "//Multiplier over the speed from 0-1 (0% - 100%)\n" },
+		{ "Comment", "// Moltiplicatore velocit?\n" },
 		{ "ModuleRelativePath", "Public/PacmanActor.h" },
-		{ "ToolTip", "Multiplier over the speed from 0-1 (0% - 100%)" },
+		{ "ToolTip", "Moltiplicatore velocit?" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APacmanActor_Statics::NewProp_SpeedMultiplier = { "SpeedMultiplier", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APacmanActor, SpeedMultiplier), METADATA_PARAMS(Z_Construct_UClass_APacmanActor_Statics::NewProp_SpeedMultiplier_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APacmanActor_Statics::NewProp_SpeedMultiplier_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APacmanActor_Statics::NewProp_ThresholdRadius_MetaData[] = {
 		{ "Category", "Pacman" },
-		{ "Comment", "//Threshold to know when we are close enough of the destination\n//Normally is related to the Speed, ifwe have a bigger speed the threshold need to be bigger\n" },
+		{ "Comment", "// Vicini o no destinazione\n" },
 		{ "ModuleRelativePath", "Public/PacmanActor.h" },
-		{ "ToolTip", "Threshold to know when we are close enough of the destination\nNormally is related to the Speed, ifwe have a bigger speed the threshold need to be bigger" },
+		{ "ToolTip", "Vicini o no destinazione" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APacmanActor_Statics::NewProp_ThresholdRadius = { "ThresholdRadius", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APacmanActor, ThresholdRadius), METADATA_PARAMS(Z_Construct_UClass_APacmanActor_Statics::NewProp_ThresholdRadius_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APacmanActor_Statics::NewProp_ThresholdRadius_MetaData)) };
@@ -290,7 +290,7 @@ void EmptyLinkFunctionForGeneratedCodePacmanActor() {}
 		{ "ModuleRelativePath", "Public/PacmanActor.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APacmanActor_Statics::NewProp_LeftTeleport = { "LeftTeleport", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APacmanActor, LeftTeleport), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APacmanActor_Statics::NewProp_LeftTeleport_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APacmanActor_Statics::NewProp_LeftTeleport_MetaData)) }; // 3758333054
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APacmanActor_Statics::NewProp_LeftTeleport = { "LeftTeleport", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APacmanActor, LeftTeleport), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APacmanActor_Statics::NewProp_LeftTeleport_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APacmanActor_Statics::NewProp_LeftTeleport_MetaData)) }; // 1923887579
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_APacmanActor_Statics::NewProp_RightTeleport_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APacmanActor_Statics::NewProp_RightTeleport_MetaData[] = {
@@ -298,7 +298,7 @@ void EmptyLinkFunctionForGeneratedCodePacmanActor() {}
 		{ "ModuleRelativePath", "Public/PacmanActor.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APacmanActor_Statics::NewProp_RightTeleport = { "RightTeleport", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APacmanActor, RightTeleport), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APacmanActor_Statics::NewProp_RightTeleport_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APacmanActor_Statics::NewProp_RightTeleport_MetaData)) }; // 3758333054
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APacmanActor_Statics::NewProp_RightTeleport = { "RightTeleport", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APacmanActor, RightTeleport), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APacmanActor_Statics::NewProp_RightTeleport_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APacmanActor_Statics::NewProp_RightTeleport_MetaData)) }; // 1923887579
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APacmanActor_Statics::NewProp_SpeedBoostDuration_MetaData[] = {
 		{ "Category", "PacmanActor" },
@@ -385,15 +385,15 @@ void EmptyLinkFunctionForGeneratedCodePacmanActor() {}
 		return APacmanActor::StaticClass();
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APacmanActor);
-	struct Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_PacmanActor_h_Statics
+	struct Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_PacmanActor_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_PacmanActor_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APacmanActor, APacmanActor::StaticClass, TEXT("APacmanActor"), &Z_Registration_Info_UClass_APacmanActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APacmanActor), 1638273755U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_PacmanActor_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_APacmanActor, APacmanActor::StaticClass, TEXT("APacmanActor"), &Z_Registration_Info_UClass_APacmanActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APacmanActor), 2199245184U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_PacmanActor_h_2107247887(TEXT("/Script/Pacman"),
-		Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_PacmanActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_PacmanActor_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_PacmanActor_h_1346423899(TEXT("/Script/Pacman"),
+		Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_PacmanActor_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_PacmanActor_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

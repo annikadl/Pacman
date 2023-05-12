@@ -1,6 +1,6 @@
-C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Source\Pacman\Private\InkyPhantom.cpp
+C:\Users\PAA_user\Documents\GitHub\Pacman2\Source\Pacman\Private\InkyPhantom.cpp
 /I .
-/I C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Source\Pacman\Private
+/I C:\Users\PAA_user\Documents\GitHub\Pacman2\Source\Pacman\Private
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
 /I Runtime
 /I ..\Shaders\Shared
@@ -708,10 +708,10 @@ C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Source\Pacman\Private\InkyPhan
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
 /I Developer\AnimationDataController
-/I C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Intermediate\Build\Win64\UnrealEditor\Inc\Pacman
-/I C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Source
-/I C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Source\Pacman\Public
-/I C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Source\Pacman
+/I C:\Users\PAA_user\Documents\GitHub\Pacman2\Intermediate\Build\Win64\UnrealEditor\Inc\Pacman
+/I C:\Users\PAA_user\Documents\GitHub\Pacman2\Source
+/I C:\Users\PAA_user\Documents\GitHub\Pacman2\Source\Pacman\Public
+/I C:\Users\PAA_user\Documents\GitHub\Pacman2\Source\Pacman
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
@@ -732,12 +732,12 @@ C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Source\Pacman\Private\InkyPhan
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt"
-/FI"C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h"
-/FI"C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Definitions.Pacman.h"
-/Yu"C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h.pch"
-/Fo"C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\InkyPhantom.cpp.lc.obj"
-/sourceDependencies"C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\InkyPhantom.cpp.lc.json"
+/FI"C:\Users\PAA_user\Documents\GitHub\Pacman2\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h"
+/FI"C:\Users\PAA_user\Documents\GitHub\Pacman2\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Definitions.Pacman.h"
+/Yu"C:\Users\PAA_user\Documents\GitHub\Pacman2\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\PAA_user\Documents\GitHub\Pacman2\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h.pch"
+/Fo"C:\Users\PAA_user\Documents\GitHub\Pacman2\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\InkyPhantom.cpp.lc.obj"
+/sourceDependencies"C:\Users\PAA_user\Documents\GitHub\Pacman2\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\InkyPhantom.cpp.lc.json"
 /Zc:inline
 /nologo
 /Oi

@@ -176,9 +176,9 @@ void EmptyLinkFunctionForGeneratedCodePhantom() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APhantom_OnOverlap_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "//Called when a actor overlaps something\n" },
+		{ "Comment", "// chiamata quando un attore overlappa qualcosa\n" },
 		{ "ModuleRelativePath", "Public/Phantom.h" },
-		{ "ToolTip", "Called when a actor overlaps something" },
+		{ "ToolTip", "chiamata quando un attore overlappa qualcosa" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APhantom_OnOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APhantom, nullptr, "OnOverlap", nullptr, nullptr, sizeof(Z_Construct_UFunction_APhantom_OnOverlap_Statics::Phantom_eventOnOverlap_Parms), Z_Construct_UFunction_APhantom_OnOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APhantom_OnOverlap_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APhantom_OnOverlap_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APhantom_OnOverlap_Statics::Function_MetaDataParams)) };
@@ -200,9 +200,9 @@ void EmptyLinkFunctionForGeneratedCodePhantom() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APhantom_OnScatterTimerExpired_Statics::Function_MetaDataParams[] = {
-		{ "Comment", "//functions and variables of Scatter-Chase alternation\n" },
+		{ "Comment", "// alternanza stato fantasmi\n" },
 		{ "ModuleRelativePath", "Public/Phantom.h" },
-		{ "ToolTip", "functions and variables of Scatter-Chase alternation" },
+		{ "ToolTip", "alternanza stato fantasmi" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APhantom_OnScatterTimerExpired_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APhantom, nullptr, "OnScatterTimerExpired", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_APhantom_OnScatterTimerExpired_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_APhantom_OnScatterTimerExpired_Statics::Function_MetaDataParams)) };
@@ -289,8 +289,8 @@ void EmptyLinkFunctionForGeneratedCodePhantom() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Pacman,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_APhantom_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_APhantom_OnOverlap, "OnOverlap" }, // 190220181
-		{ &Z_Construct_UFunction_APhantom_OnScatterTimerExpired, "OnScatterTimerExpired" }, // 4163666270
+		{ &Z_Construct_UFunction_APhantom_OnOverlap, "OnOverlap" }, // 519693981
+		{ &Z_Construct_UFunction_APhantom_OnScatterTimerExpired, "OnScatterTimerExpired" }, // 2260179482
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APhantom_Statics::Class_MetaDataParams[] = {
@@ -317,18 +317,18 @@ void EmptyLinkFunctionForGeneratedCodePhantom() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APhantom_Statics::NewProp_Speed_MetaData[] = {
 		{ "Category", "Pacman" },
-		{ "Comment", "// Base Speed of the player\n" },
+		{ "Comment", "// velocit? normale\n" },
 		{ "ModuleRelativePath", "Public/Phantom.h" },
-		{ "ToolTip", "Base Speed of the player" },
+		{ "ToolTip", "velocit? normale" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_Speed = { "Speed", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, Speed), METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_Speed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_Speed_MetaData)) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APhantom_Statics::NewProp_SpeedMultiplier_MetaData[] = {
 		{ "Category", "Pacman" },
-		{ "Comment", "//Multiplier over the speed from 0-1 (0% - 100%)\n" },
+		{ "Comment", "// moltiplicatore velocit?\n" },
 		{ "ModuleRelativePath", "Public/Phantom.h" },
-		{ "ToolTip", "Multiplier over the speed from 0-1 (0% - 100%)" },
+		{ "ToolTip", "moltiplicatore velocit?" },
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_SpeedMultiplier = { "SpeedMultiplier", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, SpeedMultiplier), METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_SpeedMultiplier_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_SpeedMultiplier_MetaData)) };
@@ -352,32 +352,32 @@ void EmptyLinkFunctionForGeneratedCodePhantom() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APhantom_Statics::NewProp_ScatterPosition_MetaData[] = {
 		{ "Category", "Pacman" },
-		{ "Comment", "//Position to go when Scatter State\n" },
+		{ "Comment", "// posizione per scatter\n" },
 		{ "ModuleRelativePath", "Public/Phantom.h" },
-		{ "ToolTip", "Position to go when Scatter State" },
+		{ "ToolTip", "posizione per scatter" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_ScatterPosition = { "ScatterPosition", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, ScatterPosition), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_ScatterPosition_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_ScatterPosition_MetaData)) }; // 3758333054
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_ScatterPosition = { "ScatterPosition", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, ScatterPosition), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_ScatterPosition_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_ScatterPosition_MetaData)) }; // 1923887579
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_GhostsHouse_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APhantom_Statics::NewProp_GhostsHouse_MetaData[] = {
 		{ "Category", "Pacman" },
-		{ "Comment", "//Position to go when Frightened State (ghosts house) and when dead\n" },
+		{ "Comment", "// posizione per frigthned e dead (casa fantasmi)\n" },
 		{ "ModuleRelativePath", "Public/Phantom.h" },
-		{ "ToolTip", "Position to go when Frightened State (ghosts house) and when dead" },
+		{ "ToolTip", "posizione per frigthned e dead (casa fantasmi)" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_GhostsHouse = { "GhostsHouse", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, GhostsHouse), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_GhostsHouse_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_GhostsHouse_MetaData)) }; // 3758333054
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_GhostsHouse = { "GhostsHouse", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, GhostsHouse), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_GhostsHouse_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_GhostsHouse_MetaData)) }; // 1923887579
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_LeftTeleport_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APhantom_Statics::NewProp_LeftTeleport_MetaData[] = {
 		{ "Category", "Pacman" },
-		{ "Comment", "//Teleport positions\n" },
+		{ "Comment", "// posizione Teleport\n" },
 		{ "ModuleRelativePath", "Public/Phantom.h" },
-		{ "ToolTip", "Teleport positions" },
+		{ "ToolTip", "posizione Teleport" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_LeftTeleport = { "LeftTeleport", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, LeftTeleport), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_LeftTeleport_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_LeftTeleport_MetaData)) }; // 3758333054
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_LeftTeleport = { "LeftTeleport", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, LeftTeleport), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_LeftTeleport_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_LeftTeleport_MetaData)) }; // 1923887579
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_RightTeleport_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APhantom_Statics::NewProp_RightTeleport_MetaData[] = {
@@ -385,14 +385,14 @@ void EmptyLinkFunctionForGeneratedCodePhantom() {}
 		{ "ModuleRelativePath", "Public/Phantom.h" },
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_RightTeleport = { "RightTeleport", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, RightTeleport), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_RightTeleport_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_RightTeleport_MetaData)) }; // 3758333054
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_RightTeleport = { "RightTeleport", nullptr, (EPropertyFlags)0x0020080000010001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, RightTeleport), Z_Construct_UEnum_Pacman_EGridPositions, METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_RightTeleport_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_RightTeleport_MetaData)) }; // 1923887579
 	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_CurrentState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, nullptr, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APhantom_Statics::NewProp_CurrentState_MetaData[] = {
 		{ "Category", "Phantom" },
-		{ "Comment", "//Current Phantom State\n" },
+		{ "Comment", "// stato corrente\n" },
 		{ "ModuleRelativePath", "Public/Phantom.h" },
-		{ "ToolTip", "Current Phantom State" },
+		{ "ToolTip", "stato corrente" },
 	};
 #endif
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APhantom_Statics::NewProp_CurrentState = { "CurrentState", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APhantom, CurrentState), Z_Construct_UEnum_Pacman_EState, METADATA_PARAMS(Z_Construct_UClass_APhantom_Statics::NewProp_CurrentState_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APhantom_Statics::NewProp_CurrentState_MetaData)) }; // 3086332444
@@ -453,19 +453,19 @@ void EmptyLinkFunctionForGeneratedCodePhantom() {}
 		return APhantom::StaticClass();
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APhantom);
-	struct Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_Phantom_h_Statics
+	struct Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_Phantom_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_Phantom_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_Phantom_h_Statics::EnumInfo[] = {
 		{ EState_StaticEnum, TEXT("EState"), &Z_Registration_Info_UEnum_EState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3086332444U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_Phantom_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APhantom, APhantom::StaticClass, TEXT("APhantom"), &Z_Registration_Info_UClass_APhantom, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APhantom), 1296650239U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_Phantom_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_APhantom, APhantom::StaticClass, TEXT("APhantom"), &Z_Registration_Info_UClass_APhantom, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APhantom), 4199620839U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_Phantom_h_274771000(TEXT("/Script/Pacman"),
-		Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_Phantom_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_Phantom_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_Phantom_h_1838311184(TEXT("/Script/Pacman"),
+		Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_Phantom_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_Phantom_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_Phantom_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_Phantom_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_Phantom_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Pacman2_Source_Pacman_Public_Phantom_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
