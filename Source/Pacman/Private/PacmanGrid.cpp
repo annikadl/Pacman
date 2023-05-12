@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #include "PacmanGrid.h"
 #include "Engine/StaticMeshActor.h"
 #include "Point.h"
@@ -56,27 +54,24 @@ static char Map[MapSizeX][MapSizeY] = {
 
 
 
-// Sets default values for this component's properties
+// valori di default
 AGrid::AGrid()
 {
-	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
-	// off to improve performance if you don't need them.
+	// iniializzato quando parte il gioco
 	PrimaryActorTick.bCanEverTick = true;
 }
 
-// Called when the game starts
+// Chiamato quand parte il gioco
 void AGrid::BeginPlay()
 {
 	Super::BeginPlay();
 
-	//Spawn each object with separation from starting point
-	//Set Spawn Collision Handling Override
+	// spwna ogni ogfgetto al suo posto
 	FActorSpawnParameters ActorSpawnParams;
 	ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
 
 	FVector SpawnPosition = GetActorLocation();
 
-	//Add Vector with half of grid scale
 	FVector HalfGrid(GridScale*0.5f, GridScale*0.5, 0.0f);
 
 	SpawnPosition += HalfGrid;
@@ -84,7 +79,7 @@ void AGrid::BeginPlay()
 
 	Converser = 1.0f / GridScale;
 
-	//Go through map and create nodes
+	// creo mappa con doppio for innestato
 	for (int i = 0; i < MapSizeX; i++)
 	{
 		for (int j = 0; j < MapSizeY - 1; j++)
@@ -106,11 +101,7 @@ void AGrid::BeginPlay()
 				Phantom->SetGrid(this);
 				Phantoms.Add(Phantom);
 			}
-			/*else if (MapTile == 'T')
-			{
-				Teleport = GetWorld()->SpawnActor<ATeleport>(TeleportClass, SpawnPosition, FRotator::ZeroRotator, ActorSpawnParams);
-				Teleport->SetGrid(this);
-			}*/
+
 			else if(MapTile != 'N' && MapTile != 'T' && MapTile != 'L')
 			{
 				APoint* Point = GetWorld()->SpawnActor<APoint>(PointClass, SpawnPosition, FRotator::ZeroRotator, ActorSpawnParams);
@@ -130,16 +121,16 @@ void AGrid::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-//function to get the tile position in the world
+// tile pos assoluta
 void AGrid::GetTileFromWorld(const FVector & WorldPosition, int & XTile, int & YTile)
 {
 	FVector GridPosition = WorldPosition - GetActorLocation();
-	//The X on the pacman means horizontally, which is the J on the matrix and viceversa
+	
 	XTile = GridPosition.Y * Converser;
 	YTile = GridPosition.X * Converser;
 }
 
-//function to get the position of a tile in the world, to later calculate the destionation of an actor or a pawn
+// pos abs da tile cocsì poi calcolo il target
 FVector AGrid::GetWorldFromTile(const int & XTile, const int & YTile)
 {
 	FVector HalfGrid(GridScale*0.5f, GridScale*0.5, 0.0f);
@@ -157,7 +148,7 @@ char AGrid::GetTileValue(int& XTile, int& YTile)
 	return Map[XTile][YTile];
 }
 
-//get the next tile in the chosen direction
+// prossima tile nella direzione desiderata
 void AGrid::GetTileInDir(EDirection NextDirection, int & XTile, int & YTile)
 {
 	if (XTile < MapSizeX && YTile < MapSizeY)
@@ -190,10 +181,9 @@ void AGrid::GetTileInDir(EDirection NextDirection, int & XTile, int & YTile)
 	}
 }
 
-//calculate the new actor destination, checking if the desired tile is reachable (so if actor can move there)
+// calcola pos e cede se è walkable
 bool AGrid::CalculateNewDestination(EDirection NewDirection, FVector& Destination)
 {
-	//Convert Player position to Grid (so obtain the tile) and search in new direction
 	if (PacmanActor)
 	{
 		int XTile, YTile = 0;
@@ -211,7 +201,7 @@ bool AGrid::CalculateNewDestination(EDirection NewDirection, FVector& Destinatio
 		}
 		else
 		{
-			//Next Tile center point
+			// Punto centrale nuova tile
 			Destination = GetWorldFromTile(XTile, YTile);
 			return true;
 		}
@@ -221,10 +211,9 @@ bool AGrid::CalculateNewDestination(EDirection NewDirection, FVector& Destinatio
 	return false;
 }
 
-//check if the player can move in the desired direction
+// ci posso andare? x giocatore
 bool AGrid::CanPlayerMoveInDir(EDirection NewDirection)
 {
-	//Convert Player position to Grid and search in new direction
 	if (PacmanActor)
 	{
 		int XTile, YTile = 0;
@@ -238,7 +227,7 @@ bool AGrid::CanPlayerMoveInDir(EDirection NewDirection)
 	}
 }
 
-//check if the actor can move in the desired tile
+// x altri
 bool AGrid::CanMoveToTile(const int & XTile, const int & YTile)
 {
 	return Map[XTile][YTile] != '#' && Map[XTile][YTile] != 'N';
@@ -311,23 +300,21 @@ FVector AGrid::GetGridSpecialPosition(EGridPositions GridChoice)
 
 FVector AGrid::GetNextDestination(const FVector& PositionToGo, const FVector& CurrentPosition, const FVector& CurrentDirection, FVector& NextDirection, ESearchOrder SearchOrder)
 {
-	//Get Tiles from Current Position and Position To Go
 	int XTile, YTile = 0;
 	int XTargetTile, YTargetTile = 0;
 
 	GetTileFromWorld(CurrentPosition, XTile, YTile);
 	GetTileFromWorld(PositionToGo, XTargetTile, YTargetTile);
 
-	//Select Which Next Tiles are available from Next Tile (Fwd/Up/Down)
+	// quali prossiem tile disponibili
 	TArray<FTileSelection> PossibleTiles = GetPossibleTiles(XTile, YTile, GetDirection(CurrentDirection));
 	check(PossibleTiles.Num() > 0);
 
-	//Select nearest Tile to TileToGp
 	int MinDistance = 1000;
 	FTileSelection SelectedTile;
 	if (PossibleTiles.Num() > 1)
 	{
-		//Search nearest,
+		// vicino
 		switch (SearchOrder)
 		{
 		case ESearchOrder::MinDistance:
@@ -350,7 +337,7 @@ FVector AGrid::GetNextDestination(const FVector& PositionToGo, const FVector& Cu
 		}
 		default:
 		{
-			//By Default we search by min distance
+			// cerchiamo la minima distanza per default
 			for (int i = 0; i < PossibleTiles.Num(); i++)
 			{
 				int MDistance = PossibleTiles[i].GetManhattanDistance(XTargetTile, YTargetTile);
@@ -370,7 +357,7 @@ FVector AGrid::GetNextDestination(const FVector& PositionToGo, const FVector& Cu
 		SelectedTile = PossibleTiles[0];
 	}
 
-	//Select next Direction
+	// selezione prossima direzione
 	NextDirection = SelectedTile.TileDirection;
 	return GetWorldFromTile(SelectedTile.XTile, SelectedTile.YTile);
 }
@@ -379,8 +366,7 @@ TArray<FTileSelection> AGrid::GetPossibleTiles(int XTile, int YTile, EDirection 
 {
 	TArray<FTileSelection> Selection;
 
-	//From Current Direction, get Forward and sides Tiles (if is not a wall)
-	//Try to follow the order Up,Left,Down,Right
+
 	int XForward = XTile, XSide1 = XTile, XSide2 = XTile;
 	int YForward = YTile, YSide1 = YTile, YSide2 = YTile;
 
@@ -394,14 +380,14 @@ TArray<FTileSelection> AGrid::GetPossibleTiles(int XTile, int YTile, EDirection 
 			FTileSelection Sel(XForward, YForward, GetVectorDirection(CurrentDir));
 			Selection.Add(Sel);
 		}
-		//Get Left
+		// sx
 		GetTileInDir(EDirection::Left, XSide1, YSide1);
 		if (CanMoveToTile(XSide1, YSide1))
 		{
 			FTileSelection Sel(XSide1, YSide1, GetVectorDirection(EDirection::Left));
 			Selection.Add(Sel);
 		}
-		//Get Right
+		// dx
 		GetTileInDir(EDirection::Right, XSide2, YSide2);
 		if (CanMoveToTile(XSide2, YSide2))
 		{
@@ -413,21 +399,21 @@ TArray<FTileSelection> AGrid::GetPossibleTiles(int XTile, int YTile, EDirection 
 	}
 	case EDirection::Down:
 	{
-		//Get Left 
+		// sx 
 		GetTileInDir(EDirection::Left, XSide1, YSide1);
 		if (CanMoveToTile(XSide1, YSide1))
 		{
 			FTileSelection Sel(XSide1, YSide1, GetVectorDirection(EDirection::Left));
 			Selection.Add(Sel);
 		}
-		// Current Down
+		// giu
 		GetTileInDir(CurrentDir, XForward, YForward);
 		if (CanMoveToTile(XForward, YForward))
 		{
 			FTileSelection Sel(XForward, YForward, GetVectorDirection(CurrentDir));
 			Selection.Add(Sel);
 		}
-		//Get Right
+		// dx
 		GetTileInDir(EDirection::Right, XSide2, YSide2);
 		if (CanMoveToTile(XSide2, YSide2))
 		{
@@ -438,21 +424,21 @@ TArray<FTileSelection> AGrid::GetPossibleTiles(int XTile, int YTile, EDirection 
 	}
 	case EDirection::Left:
 	{
-		//Get Up
+		//su
 		GetTileInDir(EDirection::Up, XSide1, YSide1);
 		if (CanMoveToTile(XSide1, YSide1))
 		{
 			FTileSelection Sel(XSide1, YSide1, GetVectorDirection(EDirection::Up));
 			Selection.Add(Sel);
 		}
-		//Get Left
+		//sx
 		GetTileInDir(CurrentDir, XForward, YForward);
 		if (CanMoveToTile(XForward, YForward))
 		{
 			FTileSelection Sel(XForward, YForward, GetVectorDirection(CurrentDir));
 			Selection.Add(Sel);
 		}
-		// Get Down
+		//giu
 		GetTileInDir(EDirection::Down, XSide2, YSide2);
 		if (CanMoveToTile(XSide2, YSide2))
 		{
@@ -463,21 +449,21 @@ TArray<FTileSelection> AGrid::GetPossibleTiles(int XTile, int YTile, EDirection 
 	}
 	case EDirection::Right:
 	{
-		//Get Up
+		// su
 		GetTileInDir(EDirection::Up, XSide1, YSide1);
 		if (CanMoveToTile(XSide1, YSide1))
 		{
 			FTileSelection Sel(XSide1, YSide1, GetVectorDirection(EDirection::Up));
 			Selection.Add(Sel);
 		}
-		// Get Down
+		// giu
 		GetTileInDir(EDirection::Down, XSide2, YSide2);
 		if (CanMoveToTile(XSide2, YSide2))
 		{
 			FTileSelection Sel(XSide2, YSide2, GetVectorDirection(EDirection::Down));
 			Selection.Add(Sel);
 		}
-		//Get Right
+		// dx
 		GetTileInDir(CurrentDir, XForward, YForward);
 		if (CanMoveToTile(XForward, YForward))
 		{

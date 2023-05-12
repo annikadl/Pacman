@@ -9,12 +9,12 @@ APacmanGameModeBase::APacmanGameModeBase()
 
 void APacmanGameModeBase::PointEat(bool IsSpecial)
 {
-	//Add Points to score,
+	//punti
 
 
 	if (IsSpecial)
 	{
-		//If is special the pacman can eat phanthom for some time
+		//ricordare che se mangia palle speciali può mangiare i fantasmi
 		TotalScore += SpecialPointsValue;
 
 	}
