@@ -125,7 +125,6 @@ void APhantom::OnOverlap(UPrimitiveComponent * OverlappedComponent, AActor * Oth
 			UGameplayStatics::PlaySound2D(this, minuslife);
 			APacmanGameModeBase* GameMode = Cast<APacmanGameModeBase>(GetWorld()->GetAuthGameMode());
 			GameMode->Lives--;
-			GameMode->IsLifeDown = true;
 		}
 	}
 }

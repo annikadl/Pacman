@@ -75,15 +75,15 @@ void EmptyLinkFunctionForGeneratedCodePacmanPawn() {}
 		return APacmanPawn::StaticClass();
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APacmanPawn);
-	struct Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanPawn_h_Statics
+	struct Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_PacmanPawn_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanPawn_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_PacmanPawn_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_APacmanPawn, APacmanPawn::StaticClass, TEXT("APacmanPawn"), &Z_Registration_Info_UClass_APacmanPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APacmanPawn), 2778488218U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanPawn_h_662342472(TEXT("/Script/Pacman"),
-		Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanPawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanPawn_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_PacmanPawn_h_662342472(TEXT("/Script/Pacman"),
+		Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_PacmanPawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_PacmanPawn_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

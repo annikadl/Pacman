@@ -1,6 +1,6 @@
-"C:\Users\PAA_user\Documents\Unreal Projects\Annika\Intermediate\Build\Win64\UnrealEditor\Inc\Pacman\PinkyPhantom.gen.cpp"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Inc\Pacman\PinkyPhantom.gen.cpp"
 /I .
-/I "C:\Users\PAA_user\Documents\Unreal Projects\Annika\Source\Pacman\Private"
+/I "C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Source\Pacman\Private"
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
 /I Runtime
 /I ..\Shaders\Shared
@@ -708,10 +708,10 @@
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
 /I Developer\AnimationDataController
-/I "C:\Users\PAA_user\Documents\Unreal Projects\Annika\Intermediate\Build\Win64\UnrealEditor\Inc\Pacman"
-/I "C:\Users\PAA_user\Documents\Unreal Projects\Annika\Source"
-/I "C:\Users\PAA_user\Documents\Unreal Projects\Annika\Source\Pacman\Public"
-/I "C:\Users\PAA_user\Documents\Unreal Projects\Annika\Source\Pacman"
+/I "C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Inc\Pacman"
+/I "C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Source"
+/I "C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Source\Pacman\Public"
+/I "C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Source\Pacman"
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
@@ -732,12 +732,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\winrt"
-/FI"C:\Users\PAA_user\Documents\Unreal Projects\Annika\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h"
-/FI"C:\Users\PAA_user\Documents\Unreal Projects\Annika\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Definitions.Pacman.h"
-/Yu"C:\Users\PAA_user\Documents\Unreal Projects\Annika\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h"
-/Fp"C:\Users\PAA_user\Documents\Unreal Projects\Annika\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h.pch"
-/Fo"C:\Users\PAA_user\Documents\Unreal Projects\Annika\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PinkyPhantom.gen.cpp.obj"
-/sourceDependencies "C:\Users\PAA_user\Documents\Unreal Projects\Annika\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PinkyPhantom.gen.cpp.json"
+/FI"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h"
+/FI"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Definitions.Pacman.h"
+/Yu"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h"
+/Fp"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h.pch"
+/Fo"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PinkyPhantom.gen.cpp.obj"
+/sourceDependencies "C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PinkyPhantom.gen.cpp.json"
 /Zc:inline
 /nologo
 /Oi

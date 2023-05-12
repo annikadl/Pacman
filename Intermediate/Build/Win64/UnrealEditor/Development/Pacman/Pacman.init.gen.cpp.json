@@ -1,11 +1,11 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\paa_user\\documents\\unreal projects\\annika\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\pacman.init.gen.cpp",
+        "Source": "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\pacman.init.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\paa_user\\documents\\unreal projects\\annika\\intermediate\\build\\win64\\pacmaneditor\\development\\engine\\sharedpch.engine.h.pch",
+        "PCH": "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\pacmaneditor\\development\\engine\\sharedpch.engine.h.pch",
         "Includes": [
-            "c:\\users\\paa_user\\documents\\unreal projects\\annika\\intermediate\\build\\win64\\unrealeditor\\development\\pacman\\definitions.pacman.h"
+            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\development\\pacman\\definitions.pacman.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

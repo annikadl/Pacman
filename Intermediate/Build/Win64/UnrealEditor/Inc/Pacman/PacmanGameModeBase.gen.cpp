@@ -52,11 +52,6 @@ void EmptyLinkFunctionForGeneratedCodePacmanGameModeBase() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_EatTimeSeconds_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_EatTimeSeconds;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_IsLifeDown_MetaData[];
-#endif
-		static void NewProp_IsLifeDown_SetBit(void* Obj);
-		static const UECodeGen_Private::FBoolPropertyParams NewProp_IsLifeDown;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -128,17 +123,6 @@ void EmptyLinkFunctionForGeneratedCodePacmanGameModeBase() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_EatTimeSeconds = { "EatTimeSeconds", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(APacmanGameModeBase, EatTimeSeconds), METADATA_PARAMS(Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_EatTimeSeconds_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_EatTimeSeconds_MetaData)) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_IsLifeDown_MetaData[] = {
-		{ "Category", "Score" },
-		{ "ModuleRelativePath", "PacmanGameModeBase.h" },
-	};
-#endif
-	void Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_IsLifeDown_SetBit(void* Obj)
-	{
-		((APacmanGameModeBase*)Obj)->IsLifeDown = 1;
-	}
-	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_IsLifeDown = { "IsLifeDown", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(APacmanGameModeBase), &Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_IsLifeDown_SetBit, METADATA_PARAMS(Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_IsLifeDown_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_IsLifeDown_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APacmanGameModeBase_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_TotalScore,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_Lives,
@@ -146,7 +130,6 @@ void EmptyLinkFunctionForGeneratedCodePacmanGameModeBase() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_NormalPointsValue,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_SpecialPointsValue,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_EatTimeSeconds,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APacmanGameModeBase_Statics::NewProp_IsLifeDown,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APacmanGameModeBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APacmanGameModeBase>::IsAbstract,
@@ -179,15 +162,15 @@ void EmptyLinkFunctionForGeneratedCodePacmanGameModeBase() {}
 		return APacmanGameModeBase::StaticClass();
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APacmanGameModeBase);
-	struct Z_CompiledInDeferFile_FID_Annika_Source_Pacman_PacmanGameModeBase_h_Statics
+	struct Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_PacmanGameModeBase_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APacmanGameModeBase, APacmanGameModeBase::StaticClass, TEXT("APacmanGameModeBase"), &Z_Registration_Info_UClass_APacmanGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APacmanGameModeBase), 4145046865U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_APacmanGameModeBase, APacmanGameModeBase::StaticClass, TEXT("APacmanGameModeBase"), &Z_Registration_Info_UClass_APacmanGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APacmanGameModeBase), 3080700422U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_PacmanGameModeBase_h_1874416590(TEXT("/Script/Pacman"),
-		Z_CompiledInDeferFile_FID_Annika_Source_Pacman_PacmanGameModeBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Annika_Source_Pacman_PacmanGameModeBase_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_2494527955(TEXT("/Script/Pacman"),
+		Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_PacmanGameModeBase_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
