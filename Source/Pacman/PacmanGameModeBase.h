@@ -48,7 +48,7 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Score")
 		float EatTimeSeconds = 3.5f;
 
-	UPROPERTY(EditAnywhere, Category = "Score")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Score")
 		bool IsLifeDown = false;
 
 };

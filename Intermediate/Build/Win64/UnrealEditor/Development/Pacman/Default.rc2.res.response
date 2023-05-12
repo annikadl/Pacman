@@ -63,5 +63,5 @@
 /DBUILD_ICON_FILE_NAME="\"..\\Build\\Windows\\Resources\\Default.ico\""
 /DPROJECT_COPYRIGHT_STRING="Fill out your copyright notice in the Description page of Project Settings."
 /DPROJECT_PRODUCT_IDENTIFIER=Pacman
-/fo "C:\Users\PAA_user\Documents\GitHub\PacmanConsegna\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Default.rc2.res"
+/fo "C:\Users\PAA_user\Documents\Unreal Projects\Annika\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Default.rc2.res"
 "..\Build\Windows\Resources\Default.rc2"

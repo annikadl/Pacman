@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\source\\pacman\\private\\inkyphantom.cpp",
+        "Source": "c:\\users\\paa_user\\documents\\unreal projects\\annika\\source\\pacman\\private\\inkyphantom.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\pacmaneditor\\development\\engine\\sharedpch.engine.h.pch",
+        "PCH": "c:\\users\\paa_user\\documents\\unreal projects\\annika\\intermediate\\build\\win64\\pacmaneditor\\development\\engine\\sharedpch.engine.h.pch",
         "Includes": [
-            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\development\\pacman\\definitions.pacman.h",
-            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\source\\pacman\\public\\inkyphantom.h",
-            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\source\\pacman\\public\\phantom.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\annika\\intermediate\\build\\win64\\unrealeditor\\development\\pacman\\definitions.pacman.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\annika\\source\\pacman\\public\\inkyphantom.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\annika\\source\\pacman\\public\\phantom.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystatics.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
@@ -17,10 +17,10 @@
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\kismet\\gameplaystaticstypes.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystaticstypes.generated.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\gameplaystatics.generated.h",
-            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\source\\pacman\\public\\pacmangrid.h",
-            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\pacmangrid.generated.h",
-            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\phantom.generated.h",
-            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\inkyphantom.generated.h"
+            "c:\\users\\paa_user\\documents\\unreal projects\\annika\\source\\pacman\\public\\pacmangrid.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\annika\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\pacmangrid.generated.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\annika\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\phantom.generated.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\annika\\intermediate\\build\\win64\\unrealeditor\\inc\\pacman\\inkyphantom.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

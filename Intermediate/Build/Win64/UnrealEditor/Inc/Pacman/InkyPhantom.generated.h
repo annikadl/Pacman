@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PACMAN_InkyPhantom_generated_h
 
-#define FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_SPARSE_DATA
-#define FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_RPC_WRAPPERS
-#define FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_RPC_WRAPPERS_NO_PURE_DECLS
-#define FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_INCLASS_NO_PURE_DECLS \
+#define FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_SPARSE_DATA
+#define FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_RPC_WRAPPERS
+#define FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_RPC_WRAPPERS_NO_PURE_DECLS
+#define FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAInkyPhantom(); \
 	friend struct Z_Construct_UClass_AInkyPhantom_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(AInkyPhantom)
 
 
-#define FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_INCLASS \
+#define FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_INCLASS \
 private: \
 	static void StaticRegisterNativesAInkyPhantom(); \
 	friend struct Z_Construct_UClass_AInkyPhantom_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(AInkyPhantom)
 
 
-#define FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_STANDARD_CONSTRUCTORS \
+#define FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AInkyPhantom(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(AInkyPhantom) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_ENHANCED_CONSTRUCTORS \
+#define FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AInkyPhantom() { }; \
 private: \
@@ -60,25 +60,25 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AInkyPhantom)
 
 
-#define FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_8_PROLOG
-#define FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_GENERATED_BODY_LEGACY \
+#define FID_Annika_Source_Pacman_Public_InkyPhantom_h_8_PROLOG
+#define FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_SPARSE_DATA \
-	FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_RPC_WRAPPERS \
-	FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_INCLASS \
-	FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_STANDARD_CONSTRUCTORS \
+	FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_SPARSE_DATA \
+	FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_RPC_WRAPPERS \
+	FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_INCLASS \
+	FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_GENERATED_BODY \
+#define FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_SPARSE_DATA \
-	FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_INCLASS_NO_PURE_DECLS \
-	FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h_11_ENHANCED_CONSTRUCTORS \
+	FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_SPARSE_DATA \
+	FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_INCLASS_NO_PURE_DECLS \
+	FID_Annika_Source_Pacman_Public_InkyPhantom_h_11_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -86,7 +86,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> PACMAN_API UClass* StaticClass<class AInkyPhantom>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_PacmanConsegna_Source_Pacman_Public_InkyPhantom_h
+#define CURRENT_FILE_ID FID_Annika_Source_Pacman_Public_InkyPhantom_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

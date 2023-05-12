@@ -316,23 +316,23 @@ template<> PACMAN_API UScriptStruct* StaticStruct<FTileSelection>()
 		return AGrid::StaticClass();
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(AGrid);
-	struct Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_Statics
+	struct Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FStructRegisterCompiledInInfo ScriptStructInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_Statics::EnumInfo[] = {
 		{ EGridPositions_StaticEnum, TEXT("EGridPositions"), &Z_Registration_Info_UEnum_EGridPositions, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1923887579U) },
 	};
-	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_Statics::ScriptStructInfo[] = {
+	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_Statics::ScriptStructInfo[] = {
 		{ FTileSelection::StaticStruct, Z_Construct_UScriptStruct_FTileSelection_Statics::NewStructOps, TEXT("TileSelection"), &Z_Registration_Info_UScriptStruct_TileSelection, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FTileSelection), 364150595U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_AGrid, AGrid::StaticClass, TEXT("AGrid"), &Z_Registration_Info_UClass_AGrid, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AGrid), 604944623U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_3050869251(TEXT("/Script/Pacman"),
-		Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_Statics::ClassInfo),
-		Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_Statics::ScriptStructInfo),
-		Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_PacmanGrid_h_Statics::EnumInfo));
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_3050869251(TEXT("/Script/Pacman"),
+		Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_Statics::ClassInfo),
+		Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_Statics::ScriptStructInfo),
+		Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_PacmanGrid_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

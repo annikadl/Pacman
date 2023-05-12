@@ -1,10 +1,10 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\pacmaneditor\\development\\engine\\sharedpch.engine.cpp",
+        "Source": "c:\\users\\paa_user\\documents\\unreal projects\\annika\\intermediate\\build\\win64\\pacmaneditor\\development\\engine\\sharedpch.engine.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\users\\paa_user\\documents\\unreal projects\\pacman-delucchi\\pacmanue5-main\\intermediate\\build\\win64\\pacmaneditor\\development\\engine\\sharedpch.engine.h",
+            "c:\\users\\paa_user\\documents\\unreal projects\\annika\\intermediate\\build\\win64\\pacmaneditor\\development\\engine\\sharedpch.engine.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\engine\\public\\enginesharedpch.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\core\\public\\containers\\containersfwd.h",
             "c:\\program files\\epic games\\ue_5.0\\engine\\source\\runtime\\core\\public\\hal\\platform.h",

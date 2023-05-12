@@ -453,19 +453,19 @@ void EmptyLinkFunctionForGeneratedCodePhantom() {}
 		return APhantom::StaticClass();
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(APhantom);
-	struct Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_Phantom_h_Statics
+	struct Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_Phantom_h_Statics
 	{
 		static const FEnumRegisterCompiledInInfo EnumInfo[];
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_Phantom_h_Statics::EnumInfo[] = {
+	const FEnumRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_Phantom_h_Statics::EnumInfo[] = {
 		{ EState_StaticEnum, TEXT("EState"), &Z_Registration_Info_UEnum_EState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3086332444U) },
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_Phantom_h_Statics::ClassInfo[] = {
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_Phantom_h_Statics::ClassInfo[] = {
 		{ Z_Construct_UClass_APhantom, APhantom::StaticClass, TEXT("APhantom"), &Z_Registration_Info_UClass_APhantom, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APhantom), 3786254486U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_Phantom_h_2199242593(TEXT("/Script/Pacman"),
-		Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_Phantom_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_Phantom_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_Phantom_h_2199242593(TEXT("/Script/Pacman"),
+		Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_Phantom_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_Phantom_h_Statics::ClassInfo),
 		nullptr, 0,
-		Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_Phantom_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_Phantom_h_Statics::EnumInfo));
+		Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_Phantom_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Annika_Source_Pacman_Public_Phantom_h_Statics::EnumInfo));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
