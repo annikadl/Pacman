@@ -37,7 +37,6 @@ void EmptyLinkFunctionForGeneratedCodeBlinkyPhantom() {}
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABlinkyPhantom_Statics::Class_MetaDataParams[] = {
-		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "BlinkyPhantom.h" },
 		{ "ModuleRelativePath", "Public/BlinkyPhantom.h" },
 	};
@@ -73,15 +72,15 @@ void EmptyLinkFunctionForGeneratedCodeBlinkyPhantom() {}
 		return ABlinkyPhantom::StaticClass();
 	}
 	DEFINE_VTABLE_PTR_HELPER_CTOR(ABlinkyPhantom);
-	struct Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_BlinkyPhantom_h_Statics
+	struct Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_BlinkyPhantom_h_Statics
 	{
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
-	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_BlinkyPhantom_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ABlinkyPhantom, ABlinkyPhantom::StaticClass, TEXT("ABlinkyPhantom"), &Z_Registration_Info_UClass_ABlinkyPhantom, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABlinkyPhantom), 807533343U) },
+	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_BlinkyPhantom_h_Statics::ClassInfo[] = {
+		{ Z_Construct_UClass_ABlinkyPhantom, ABlinkyPhantom::StaticClass, TEXT("ABlinkyPhantom"), &Z_Registration_Info_UClass_ABlinkyPhantom, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABlinkyPhantom), 149492995U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_BlinkyPhantom_h_1373429124(TEXT("/Script/Pacman"),
-		Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_BlinkyPhantom_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanUE5_main_Source_Pacman_Public_BlinkyPhantom_h_Statics::ClassInfo),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_BlinkyPhantom_h_164758139(TEXT("/Script/Pacman"),
+		Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_BlinkyPhantom_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PacmanConsegna_Source_Pacman_Public_BlinkyPhantom_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

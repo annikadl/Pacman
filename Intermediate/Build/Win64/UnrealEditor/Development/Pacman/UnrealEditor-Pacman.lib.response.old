@@ -1,0 +1,33 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-Pacman.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\PacmanEditor\Development\Engine\SharedPCH.Engine.h.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\BlinkyPhantom.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\ClydePhantom.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\InkyPhantom.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PacmanActor.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PacmanGrid.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PacmanPawn.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Phantom.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PinkyPhantom.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Point.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Pacman.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PacmanGameModeBase.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\BlinkyPhantom.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\ClydePhantom.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\InkyPhantom.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Pacman.init.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PacmanActor.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PacmanGameModeBase.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PacmanGrid.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PacmanPawn.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Phantom.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\PinkyPhantom.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Point.gen.cpp.obj"
+"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\Default.rc2.res"
+/OUT:"C:\Users\PAA_user\Documents\Unreal Projects\Pacman-Delucchi\PacmanUE5-main\Intermediate\Build\Win64\UnrealEditor\Development\Pacman\UnrealEditor-Pacman.lib"
