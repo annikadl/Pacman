@@ -19,3 +19,4 @@
 # Cosa posso aggiungere ancora
 
 # Cosa non funziona benissimo
+- non si vede quandoo perdo una vita
