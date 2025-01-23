@@ -12,11 +12,3 @@
 - Il pacman è un disco cilindrico giallo
 
 - I fantasmi sono cubetti colorati
-
-# Specifiche da completare
-- 
-
-# Cosa posso aggiungere ancora
-
-# Cosa non funziona benissimo
-- non si vede quandoo perdo una vita
